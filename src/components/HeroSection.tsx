@@ -8,7 +8,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-black/20"></div>
       
       {/* Logo centralizado no topo com espaçamento ajustado */}
-      <div className="absolute top-4 md:top-8 left-1/2 transform -translate-x-1/2 z-20">
+      <div className="absolute top-2 md:top-4 left-1/2 transform -translate-x-1/2 z-20">
         <img 
           src="/lovable-uploads/be006334-c69c-4c60-b770-c9aa91e01540.png" 
           alt="Instituto DespertaMENTE"
