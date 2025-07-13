@@ -26,7 +26,7 @@ export const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-idm-light-blue">
+    <section className="py-12 md:py-16 bg-idm-light-blue">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Título da seção */}
@@ -62,7 +62,7 @@ export const AboutSection = () => {
             {/* Logo do instituto */}
             <div className="text-center">
               <img 
-                src="/lovable-uploads/23ca0039-d459-4619-bb8e-493ca16880f7.png"
+                src="/lovable-uploads/3751439a-de7d-4cfb-9d51-601a50a02ce3.png"
                 alt="Instituto DespertaMENTE Logo"
                 className="max-w-xs mx-auto"
               />

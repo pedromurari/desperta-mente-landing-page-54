@@ -16,7 +16,7 @@ const Index = () => {
       <CourseOverview />
       
       {/* CTA intermediário */}
-      <div className="py-4 md:py-6 bg-idm-light-blue">
+      <div className="py-2 md:py-3 bg-idm-light-blue">
         <div className="container mx-auto px-4 text-center">
           <CTAButton text="Quero garantir os Bônus!" />
         </div>
@@ -27,7 +27,7 @@ const Index = () => {
       <InvestmentSection />
       
       {/* CTA intermediário */}
-      <div className="py-4 md:py-6 bg-idm-navy">
+      <div className="py-2 md:py-3 bg-idm-navy">
         <div className="container mx-auto px-4 text-center">
           <CTAButton variant="white" text="Quero me tornar um Psicanalista!" />
         </div>
@@ -37,7 +37,7 @@ const Index = () => {
       <TestimonialsSection />
       
       {/* CTA final */}
-      <div className="py-6 md:py-8 bg-idm-gold">
+      <div className="py-3 md:py-4 bg-idm-gold">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-lg md:text-2xl font-bold text-idm-navy mb-3 md:mb-4">
             Não perca esta oportunidade única!

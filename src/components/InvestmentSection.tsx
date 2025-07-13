@@ -4,7 +4,7 @@ import { CTAButton } from './CTAButton';
 
 export const InvestmentSection = () => {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-12 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Título da seção */}
@@ -47,7 +47,7 @@ export const InvestmentSection = () => {
               <div className="border-t border-idm-navy/20 pt-3 md:pt-4">
                 <div className="text-base md:text-lg text-idm-navy mb-2">ou à vista</div>
                 <div className="text-2xl md:text-3xl font-bold text-idm-navy">
-                  R$ 1.197,00
+                  R$ 997,00
                 </div>
                 <div className="text-sm text-idm-navy">(Pix)</div>
               </div>
@@ -85,7 +85,7 @@ export const InvestmentSection = () => {
           </div>
 
           {/* Formas de pagamento */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
             <div className="bg-white border-2 border-idm-blue rounded-2xl p-6 md:p-8 text-center mx-2 md:mx-0">
               <CreditCard className="h-10 md:h-12 w-10 md:w-12 text-idm-blue mx-auto mb-4" />
               <h3 className="text-lg md:text-xl font-bold text-idm-navy mb-3 md:mb-4">Parcelado</h3>
@@ -106,11 +106,28 @@ export const InvestmentSection = () => {
             <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 md:p-8 text-center text-white mx-2 md:mx-0">
               <Banknote className="h-10 md:h-12 w-10 md:w-12 text-white mx-auto mb-4" />
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">À Vista</h3>
-              <div className="text-2xl md:text-3xl font-bold mb-2">R$ 1.197,00</div>
+              <div className="text-2xl md:text-3xl font-bold mb-2">R$ 997,00</div>
               <p className="mb-3 md:mb-4 text-sm md:text-base">Via Pix</p>
               <div className="bg-white/20 rounded-lg p-2 md:p-3">
-                <p className="text-xs md:text-sm font-semibold">💰 Economia de R$ 300,00</p>
+                <p className="text-xs md:text-sm font-semibold">💰 Melhor preço</p>
               </div>
+            </div>
+
+            <div className="bg-white border-2 border-idm-gold rounded-2xl p-6 md:p-8 text-center mx-2 md:mx-0">
+              <CreditCard className="h-10 md:h-12 w-10 md:w-12 text-idm-gold mx-auto mb-4" />
+              <h3 className="text-lg md:text-xl font-bold text-idm-navy mb-3 md:mb-4">Cartão</h3>
+              <div className="text-2xl md:text-3xl font-bold text-idm-gold mb-2">12x R$ 99,92</div>
+              <p className="text-gray-600 mb-3 md:mb-4 text-sm md:text-base">Via cartão de crédito</p>
+              <ul className="text-left space-y-2">
+                <li className="flex items-center justify-center md:justify-start">
+                  <CheckCircle className="mr-2 h-4 w-4 text-green-500" />
+                  <span className="text-xs md:text-sm">Sem entrada</span>
+                </li>
+                <li className="flex items-center justify-center md:justify-start">
+                  <CheckCircle className="mr-2 h-4 w-4 text-green-500" />
+                  <span className="text-xs md:text-sm">Acesso imediato</span>
+                </li>
+              </ul>
             </div>
           </div>
 

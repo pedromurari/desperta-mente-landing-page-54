@@ -54,7 +54,7 @@ export const CourseContent = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-idm-light-blue">
+    <section className="py-12 md:py-16 bg-idm-light-blue">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Título da seção */}

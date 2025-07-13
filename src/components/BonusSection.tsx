@@ -24,7 +24,7 @@ export const BonusSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-br from-idm-navy to-idm-blue">
+    <section className="py-12 md:py-16 bg-gradient-to-br from-idm-navy to-idm-blue">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Título da seção */}

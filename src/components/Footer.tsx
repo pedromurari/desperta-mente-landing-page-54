@@ -3,7 +3,7 @@ import { Heart, Mail, Phone, MapPin } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-idm-navy text-white py-12">
+    <footer className="bg-idm-navy text-white py-8 md:py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -11,7 +11,7 @@ export const Footer = () => {
             <div>
               <div className="flex items-center mb-4">
                 <img 
-                  src="/lovable-uploads/bf3a76f3-06fb-4ce6-8a6a-230c12c34e7a.png"
+                  src="/lovable-uploads/8e88918f-e465-49cf-86d8-076a8bbbf39e.png"
                   alt="Instituto DespertaMENTE"
                   className="h-12 w-12 mr-3"
                 />
@@ -56,7 +56,7 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 mr-3 text-idm-gold" />
-                  <span>contato@despertamente.com.br</span>
+                  <span>institutodespertamente@gmail.com</span>
                 </div>
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 mr-3 text-idm-gold mt-1" />

@@ -71,7 +71,7 @@ export const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-8 md:py-16 bg-white">
+    <section className="py-6 md:py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Título da seção */}
