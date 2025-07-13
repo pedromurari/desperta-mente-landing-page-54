@@ -8,57 +8,57 @@ export const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Maria Silva",
-      role: "Psicanalista Clínica",
+      name: "Aluno IDM",
+      role: "",
       thumbnail: "https://img.youtube.com/vi/D4xbxCXSWoM/maxresdefault.jpg",
       videoUrl: "https://youtube.com/shorts/D4xbxCXSWoM?feature=share",
       embedUrl: "https://www.youtube.com/embed/D4xbxCXSWoM",
-      quote: "A formação do iDM transformou completamente minha vida. Hoje ajudo outras pessoas enquanto cuido de mim mesma."
+      quote: "A formação do iDM transformou completamente minha vida."
     },
     {
       id: 2,
-      name: "João Santos",
-      role: "Analista em formação",
+      name: "Aluno IDM",
+      role: "",
       thumbnail: "https://img.youtube.com/vi/g5-wCsj1D_0/maxresdefault.jpg",
       videoUrl: "https://youtube.com/shorts/g5-wCsj1D_0?feature=share",
       embedUrl: "https://www.youtube.com/embed/g5-wCsj1D_0",
-      quote: "O método integrativo me deu ferramentas práticas que uso tanto na clínica quanto na minha vida pessoal."
+      quote: "O método integrativo me deu ferramentas práticas que uso no dia a dia."
     },
     {
       id: 3,
-      name: "Ana Costa",
-      role: "Supervisora Clínica",
+      name: "Aluno IDM",
+      role: "",
       thumbnail: "https://img.youtube.com/vi/PxDfmS4vvM8/maxresdefault.jpg",
       videoUrl: "https://youtube.com/shorts/PxDfmS4vvM8?feature=share",
       embedUrl: "https://www.youtube.com/embed/PxDfmS4vvM8",
-      quote: "Recomendo o iDM para quem busca uma formação séria e transformadora em Psicanálise."
+      quote: "Recomendo o iDM para quem busca uma formação séria em Psicanálise."
     },
     {
       id: 4,
-      name: "Carlos Oliveira",
-      role: "Psicanalista Clínico",
+      name: "Aluno IDM",
+      role: "",
       thumbnail: "https://img.youtube.com/vi/B_lpIOk1RQo/maxresdefault.jpg",
       videoUrl: "https://youtube.com/shorts/B_lpIOk1RQo?feature=share",
       embedUrl: "https://www.youtube.com/embed/B_lpIOk1RQo",
-      quote: "A metodologia do iDM é única. Consegui me desenvolver profissionalmente e pessoalmente."
+      quote: "A metodologia do iDM é única e transformadora."
     },
     {
       id: 5,
-      name: "Patricia Lima",
-      role: "Terapeuta Integrativa",
+      name: "Aluno IDM",
+      role: "",
       thumbnail: "https://img.youtube.com/vi/aYncgEhrXgs/maxresdefault.jpg",
       videoUrl: "https://youtube.com/shorts/aYncgEhrXgs?feature=share",
       embedUrl: "https://www.youtube.com/embed/aYncgEhrXgs",
-      quote: "O iDM me deu as bases sólidas que eu precisava para atuar como psicanalista."
+      quote: "O iDM me deu as bases que eu precisava como psicanalista."
     },
     {
       id: 6,
-      name: "Roberto Mendes",
-      role: "Analista Clínico",
+      name: "Aluno IDM",
+      role: "",
       thumbnail: "https://img.youtube.com/vi/wDQiV0VoBT4/maxresdefault.jpg",
       videoUrl: "https://youtube.com/shorts/wDQiV0VoBT4?feature=share",
       embedUrl: "https://www.youtube.com/embed/wDQiV0VoBT4",
-      quote: "Transformei minha vida através da psicanálise e hoje ajudo outras pessoas a fazerem o mesmo."
+      quote: "Transformei minha vida através da psicanálise."
     }
   ];
 
@@ -128,7 +128,6 @@ export const TestimonialsSection = () => {
                 {/* Informações do aluno */}
                 <div className="text-center">
                   <h4 className="font-bold text-idm-navy text-sm">{testimonial.name}</h4>
-                  <p className="text-gray-600 text-xs">{testimonial.role}</p>
                 </div>
               </div>
             ))}
