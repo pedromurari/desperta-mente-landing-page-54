@@ -64,7 +64,7 @@ export const AboutSection = () => {
               <img 
                 src="/lovable-uploads/3751439a-de7d-4cfb-9d51-601a50a02ce3.png"
                 alt="Instituto DespertaMENTE Logo"
-                className="max-w-xs mx-auto"
+                className="max-w-xs md:max-w-xs max-w-32 mx-auto"
               />
             </div>
           </div>
