@@ -84,8 +84,8 @@ export const AboutSection = () => {
               </h3>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Nosso certificado de <strong>extensão universitária</strong> é reconhecido 
-                  e validado, dando a você a credibilidade necessária para atuar profissionalmente.
+                  Nosso certificado é reconhecido e validado, dando a você a credibilidade 
+                  necessária para atuar profissionalmente.
                 </p>
                 <p>
                   Ao concluir a formação, você estará apto a exercer a Psicanálise Clínica 
