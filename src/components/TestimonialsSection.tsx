@@ -7,6 +7,15 @@ export const TestimonialsSection = () => {
 
   const testimonials = [
     {
+      id: 6,
+      name: "Aluno IDM",
+      role: "",
+      thumbnail: "https://img.youtube.com/vi/wDQiV0VoBT4/maxresdefault.jpg",
+      videoUrl: "https://youtube.com/shorts/wDQiV0VoBT4?feature=share",
+      embedUrl: "https://www.youtube.com/embed/wDQiV0VoBT4",
+      quote: "Transformei minha vida através da psicanálise."
+    },
+    {
       id: 1,
       name: "Aluno IDM",
       role: "",
@@ -50,15 +59,6 @@ export const TestimonialsSection = () => {
       videoUrl: "https://youtube.com/shorts/aYncgEhrXgs?feature=share",
       embedUrl: "https://www.youtube.com/embed/aYncgEhrXgs",
       quote: "O iDM me deu as bases que eu precisava como psicanalista."
-    },
-    {
-      id: 6,
-      name: "Aluno IDM",
-      role: "",
-      thumbnail: "https://img.youtube.com/vi/wDQiV0VoBT4/maxresdefault.jpg",
-      videoUrl: "https://youtube.com/shorts/wDQiV0VoBT4?feature=share",
-      embedUrl: "https://www.youtube.com/embed/wDQiV0VoBT4",
-      quote: "Transformei minha vida através da psicanálise."
     }
   ];
 
