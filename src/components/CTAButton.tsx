@@ -5,11 +5,13 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 interface CTAButtonProps {
   variant?: 'default' | 'white' | 'navy';
   text?: string;
+  id?: string;
 }
 
 export const CTAButton = ({ 
   variant = 'default',
-  text = "Quero me tornar um Psicanalista!"
+  text = "Quero me tornar um Psicanalista!",
+  id
 }: CTAButtonProps) => {
   const handleClick = () => {
     window.open('https://bit.ly/idm_atendimento', '_blank');
@@ -28,6 +30,7 @@ export const CTAButton = ({
 
   return (
     <Button
+      id={id}
       onClick={handleClick}
       className={`${getButtonClasses()} text-xs md:text-lg font-bold py-4 px-6 md:py-5 md:px-8 h-auto rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-pulse-glow w-full max-w-xs md:max-w-none md:w-auto mx-auto`}
     >

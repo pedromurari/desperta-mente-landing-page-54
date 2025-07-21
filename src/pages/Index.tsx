@@ -19,7 +19,7 @@ const Index = () => {
       {/* CTA intermediário */}
       <div className="py-2 md:py-3 bg-idm-light-blue">
         <div className="container mx-auto px-4 text-center">
-          <CTAButton text="Quero me tornar um Psicanalista" />
+          <CTAButton id="btn-whatsapp-1" text="Quero me tornar um Psicanalista" />
         </div>
       </div>
       
@@ -30,7 +30,7 @@ const Index = () => {
       {/* CTA intermediário */}
       <div className="py-2 md:py-3 bg-idm-navy">
         <div className="container mx-auto px-4 text-center">
-          <CTAButton variant="white" text="Quero me tornar um Psicanalista" />
+          <CTAButton id="btn-whatsapp-2" variant="white" text="Quero me tornar um Psicanalista" />
         </div>
       </div>
       
@@ -43,7 +43,7 @@ const Index = () => {
           <h3 className="text-lg md:text-2xl font-bold text-idm-navy mb-3 md:mb-4">
             Não perca esta oportunidade única!
           </h3>
-          <CTAButton variant="navy" text="Quero me tornar um Psicanalista" />
+          <CTAButton id="btn-whatsapp-3" variant="navy" text="Quero me tornar um Psicanalista" />
         </div>
       </div>
       

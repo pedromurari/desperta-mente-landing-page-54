@@ -69,7 +69,7 @@ export const HeroSection = () => {
           
           {/* CTA Principal */}
           <div className="mb-6 md:mb-8 px-2">
-            <CTAButton text="Quero me tornar um Psicanalista" />
+            <CTAButton id="btn-whatsapp-hero" text="Quero me tornar um Psicanalista" />
           </div>
           
           {/* Urgência */}
