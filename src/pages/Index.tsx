@@ -8,6 +8,7 @@ import { AboutSection } from '@/components/AboutSection';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { Footer } from '@/components/Footer';
 import { CTAButton } from '@/components/CTAButton';
+import { SocialProofNotifications } from '@/components/SocialProofNotifications';
 
 const Index = () => {
   return (
@@ -47,6 +48,9 @@ const Index = () => {
       </div>
       
       <Footer />
+      
+      {/* Notificações de prova social */}
+      <SocialProofNotifications />
     </div>
   );
 };
