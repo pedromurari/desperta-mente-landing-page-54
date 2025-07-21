@@ -32,7 +32,8 @@ export const CTAButton = ({
     <Button
       id={id}
       onClick={handleClick}
-      className={`${getButtonClasses()} text-xs md:text-lg font-bold py-4 px-6 md:py-5 md:px-8 h-auto rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-pulse-glow w-full max-w-xs md:max-w-none md:w-auto mx-auto`}
+      data-gtm-button="whatsapp-cta"
+      className={`${getButtonClasses()} text-xs md:text-lg font-bold py-4 px-6 md:py-5 md:px-8 h-auto rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-pulse-glow w-full max-w-xs md:max-w-none md:w-auto mx-auto [&>*]:pointer-events-none`}
     >
       <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
       <span className="text-center flex-1 leading-tight">{text}</span>
