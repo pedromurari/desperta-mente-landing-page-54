@@ -66,10 +66,10 @@ export const SocialProofNotifications = () => {
       showNotification();
     }, 3000);
 
-    // Depois a cada 15 segundos
+    // Depois a cada 30 segundos
     const interval = setInterval(() => {
       showNotification();
-    }, 15000);
+    }, 30000);
 
     return () => {
       clearTimeout(initialTimeout);
@@ -80,10 +80,10 @@ export const SocialProofNotifications = () => {
   if (!currentNotification) return null;
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 max-w-sm">
+    <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50 max-w-xs md:max-w-sm">
       <div
         className={`
-          bg-white border border-border shadow-lg rounded-lg p-4
+          bg-white border border-border shadow-lg rounded-lg p-2 md:p-4
           transition-all duration-300 ease-in-out transform
           ${isVisible 
             ? 'opacity-100 translate-y-0 scale-100' 
@@ -91,15 +91,15 @@ export const SocialProofNotifications = () => {
           }
         `}
       >
-        <div className="flex items-start space-x-3">
+        <div className="flex items-start space-x-2 md:space-x-3">
           <div className="flex-shrink-0">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-green-500 rounded-full animate-pulse"></div>
           </div>
           <div className="flex-1">
-            <p className="text-sm text-foreground font-medium leading-relaxed">
+            <p className="text-xs md:text-sm text-foreground font-medium leading-relaxed">
               {currentNotification}
             </p>
-            <p className="text-xs text-muted-foreground mt-1">
+            <p className="text-[10px] md:text-xs text-muted-foreground mt-0.5 md:mt-1">
               Agora há pouco
             </p>
           </div>
