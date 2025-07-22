@@ -63,7 +63,7 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
       if (response.ok) {
         toast({
           title: "Dados enviados com sucesso!",
-          description: "Você será redirecionado para o WhatsApp em instantes.",
+          description: "Sua condição especial foi garantida!",
         });
         
         // Fechar modal e redirecionar após um breve delay
@@ -96,7 +96,7 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
         
         <div className="space-y-4">
           <p className="text-sm text-idm-navy text-center">
-            Para prosseguir ao WhatsApp, precisamos de alguns dados:
+            Para garantir os Bônus e Condição de Pagamento, preencha o Formulário.
           </p>
           
           <Form {...form}>
@@ -137,21 +137,11 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
                 )}
               />
               
-              <div className="flex gap-3 pt-4">
-                <Button
-                  type="button"
-                  variant="outline"
-                  onClick={onClose}
-                  className="flex-1 border-idm-gold text-idm-navy hover:bg-idm-gold/10"
-                  disabled={isSubmitting}
-                >
-                  Cancelar
-                </Button>
-                
+              <div className="pt-4">
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex-1 bg-idm-gold text-idm-navy hover:bg-[#1D6F4C] hover:text-white font-bold transition-colors duration-300"
+                  className="w-full bg-idm-gold text-idm-navy hover:bg-[#1D6F4C] hover:text-white font-bold transition-colors duration-300"
                 >
                   {isSubmitting ? (
                     <>
@@ -161,7 +151,7 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
                   ) : (
                     <>
                       <MessageCircle className="mr-2 h-4 w-4" />
-                      Ir para WhatsApp
+                      Quero Garantir a Condição Especial
                     </>
                   )}
                 </Button>
