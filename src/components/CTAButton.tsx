@@ -15,7 +15,9 @@ export const CTAButton = ({
   id,
   onOpenModal
 }: CTAButtonProps) => {
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    console.log('CTAButton clicked, onOpenModal:', !!onOpenModal);
     if (onOpenModal) {
       onOpenModal();
     } else {

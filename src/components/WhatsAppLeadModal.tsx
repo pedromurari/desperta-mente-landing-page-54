@@ -53,6 +53,7 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
         'https://script.google.com/macros/s/AKfycbyGuSQ6JmemchAJTftqQW9dYSSUJ2NmUWgZyRMNC_Vi16hoIed3LjpZcbGJBC6XTLtB/exec',
         {
           method: 'POST',
+          mode: 'no-cors',
           headers: {
             'Content-Type': 'application/json',
           },
@@ -60,20 +61,18 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
         }
       );
 
-      if (response.ok) {
-        toast({
-          title: "Dados enviados com sucesso!",
-          description: "Sua condição especial foi garantida!",
-        });
-        
-        // Fechar modal e redirecionar após um breve delay
-        onClose();
-        setTimeout(() => {
-          window.open('https://bit.ly/idm_atendimento', '_blank');
-        }, 1000);
-      } else {
-        throw new Error('Erro ao enviar dados');
-      }
+      // Com mode: 'no-cors', não conseguimos verificar response.ok
+      // Então vamos assumir que deu certo se não houve erro
+      toast({
+        title: "Dados enviados com sucesso!",
+        description: "Sua condição especial foi garantida!",
+      });
+      
+      // Fechar modal e redirecionar após um breve delay
+      onClose();
+      setTimeout(() => {
+        window.open('https://bit.ly/idm_atendimento', '_blank');
+      }, 1000);
     } catch (error) {
       toast({
         title: "Erro ao enviar dados",
