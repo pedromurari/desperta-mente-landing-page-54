@@ -49,8 +49,6 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
     setIsSubmitting(true);
     
     try {
-      console.log('Enviando dados:', data);
-      
       const formData = new FormData();
       formData.append('nome', data.nome);
       formData.append('telefone', data.telefone);
@@ -62,8 +60,6 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
           body: formData,
         }
       );
-
-      console.log('Response status:', response.status);
 
       // Google Apps Script sempre retorna sucesso se chegou até aqui
       toast({
