@@ -17,10 +17,13 @@ export const CTAButton = ({
 }: CTAButtonProps) => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    console.log('CTAButton clicked, onOpenModal:', !!onOpenModal);
+    e.stopPropagation();
+    console.log('CTAButton clicked, onOpenModal exists:', !!onOpenModal);
     if (onOpenModal) {
+      console.log('Opening modal...');
       onOpenModal();
     } else {
+      console.log('No onOpenModal, redirecting to WhatsApp');
       window.open('https://bit.ly/idm_atendimento', '_blank');
     }
   };

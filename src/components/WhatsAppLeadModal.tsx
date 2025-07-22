@@ -49,24 +49,30 @@ export const WhatsAppLeadModal = ({ isOpen, onClose }: WhatsAppLeadModalProps) =
     setIsSubmitting(true);
     
     try {
+      console.log('Enviando dados:', data);
+      
+      const formData = new FormData();
+      formData.append('nome', data.nome);
+      formData.append('telefone', data.telefone);
+      
       const response = await fetch(
         'https://script.google.com/macros/s/AKfycbyGuSQ6JmemchAJTftqQW9dYSSUJ2NmUWgZyRMNC_Vi16hoIed3LjpZcbGJBC6XTLtB/exec',
         {
           method: 'POST',
-          mode: 'no-cors',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data),
+          body: formData,
         }
       );
 
-      // Com mode: 'no-cors', não conseguimos verificar response.ok
-      // Então vamos assumir que deu certo se não houve erro
+      console.log('Response status:', response.status);
+
+      // Google Apps Script sempre retorna sucesso se chegou até aqui
       toast({
         title: "Dados enviados com sucesso!",
         description: "Sua condição especial foi garantida!",
       });
+      
+      // Resetar formulário
+      form.reset();
       
       // Fechar modal e redirecionar após um breve delay
       onClose();
