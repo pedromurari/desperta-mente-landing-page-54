@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import { HeroSection } from '@/components/HeroSection';
 import { CourseOverview } from '@/components/CourseOverview';
 import { CourseContent } from '@/components/CourseContent';
@@ -9,17 +10,32 @@ import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { Footer } from '@/components/Footer';
 import { CTAButton } from '@/components/CTAButton';
 import { SocialProofNotifications } from '@/components/SocialProofNotifications';
+import { WhatsAppLeadModal } from '@/components/WhatsAppLeadModal';
 
 const Index = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="min-h-screen bg-white font-poppins">
-      <HeroSection />
+      <HeroSection onOpenModal={handleOpenModal} />
       <CourseOverview />
       
       {/* CTA intermediário */}
       <div className="py-2 md:py-3 bg-idm-light-blue">
         <div className="container mx-auto px-4 text-center">
-          <CTAButton id="btn-whatsapp-1" text="Quero me tornar um Psicanalista" />
+          <CTAButton 
+            id="btn-whatsapp-1" 
+            text="Quero me tornar um Psicanalista" 
+            onOpenModal={handleOpenModal}
+          />
         </div>
       </div>
       
@@ -30,7 +46,12 @@ const Index = () => {
       {/* CTA intermediário */}
       <div className="py-2 md:py-3 bg-idm-navy">
         <div className="container mx-auto px-4 text-center">
-          <CTAButton id="btn-whatsapp-2" variant="white" text="Quero me tornar um Psicanalista" />
+          <CTAButton 
+            id="btn-whatsapp-2" 
+            variant="white" 
+            text="Quero me tornar um Psicanalista" 
+            onOpenModal={handleOpenModal}
+          />
         </div>
       </div>
       
@@ -43,7 +64,12 @@ const Index = () => {
           <h3 className="text-lg md:text-2xl font-bold text-idm-navy mb-3 md:mb-4">
             Não perca esta oportunidade única!
           </h3>
-          <CTAButton id="btn-whatsapp-3" variant="navy" text="Quero me tornar um Psicanalista" />
+          <CTAButton 
+            id="btn-whatsapp-3" 
+            variant="navy" 
+            text="Quero me tornar um Psicanalista" 
+            onOpenModal={handleOpenModal}
+          />
         </div>
       </div>
       
@@ -51,6 +77,12 @@ const Index = () => {
       
       {/* Notificações de prova social */}
       <SocialProofNotifications />
+      
+      {/* Modal de Lead */}
+      <WhatsAppLeadModal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal} 
+      />
     </div>
   );
 };

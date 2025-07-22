@@ -2,7 +2,11 @@
 import { CTAButton } from './CTAButton';
 import { CheckCircle, Star, Clock, Award } from 'lucide-react';
 
-export const HeroSection = () => {
+interface HeroSectionProps {
+  onOpenModal?: () => void;
+}
+
+export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
   return (
     <section className="relative bg-gradient-to-br from-idm-navy via-idm-blue to-idm-navy min-h-screen flex items-center">
       <div className="absolute inset-0 bg-black/20"></div>
@@ -69,7 +73,11 @@ export const HeroSection = () => {
           
           {/* CTA Principal */}
           <div className="mb-6 md:mb-8 px-2">
-            <CTAButton id="btn-whatsapp-hero" text="Quero me tornar um Psicanalista" />
+            <CTAButton 
+              id="btn-whatsapp-hero" 
+              text="Quero me tornar um Psicanalista" 
+              onOpenModal={onOpenModal}
+            />
           </div>
           
           {/* Urgência */}

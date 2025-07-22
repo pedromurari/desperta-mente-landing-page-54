@@ -6,15 +6,21 @@ interface CTAButtonProps {
   variant?: 'default' | 'white' | 'navy';
   text?: string;
   id?: string;
+  onOpenModal?: () => void;
 }
 
 export const CTAButton = ({ 
   variant = 'default',
   text = "Quero me tornar um Psicanalista!",
-  id
+  id,
+  onOpenModal
 }: CTAButtonProps) => {
   const handleClick = () => {
-    window.open('https://bit.ly/idm_atendimento', '_blank');
+    if (onOpenModal) {
+      onOpenModal();
+    } else {
+      window.open('https://bit.ly/idm_atendimento', '_blank');
+    }
   };
 
   const getButtonClasses = () => {
