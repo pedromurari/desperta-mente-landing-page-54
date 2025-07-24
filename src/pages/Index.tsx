@@ -1,5 +1,4 @@
 
-import { useState } from 'react';
 import { HeroSection } from '@/components/HeroSection';
 import { CourseOverview } from '@/components/CourseOverview';
 import { CourseContent } from '@/components/CourseContent';
@@ -10,22 +9,11 @@ import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { Footer } from '@/components/Footer';
 import { CTAButton } from '@/components/CTAButton';
 import { SocialProofNotifications } from '@/components/SocialProofNotifications';
-import { WhatsAppLeadModal } from '@/components/WhatsAppLeadModal';
 
 const Index = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className="min-h-screen bg-white font-poppins">
-      <HeroSection onOpenModal={handleOpenModal} />
+      <HeroSection />
       <CourseOverview />
       
       {/* CTA intermediário */}
@@ -34,7 +22,6 @@ const Index = () => {
           <CTAButton 
             id="btn-whatsapp-1" 
             text="Quero me tornar um Psicanalista" 
-            onOpenModal={handleOpenModal}
           />
         </div>
       </div>
@@ -50,7 +37,6 @@ const Index = () => {
             id="btn-whatsapp-2" 
             variant="white" 
             text="Quero me tornar um Psicanalista" 
-            onOpenModal={handleOpenModal}
           />
         </div>
       </div>
@@ -68,7 +54,6 @@ const Index = () => {
             id="btn-whatsapp-3" 
             variant="navy" 
             text="Quero me tornar um Psicanalista" 
-            onOpenModal={handleOpenModal}
           />
         </div>
       </div>
@@ -77,12 +62,6 @@ const Index = () => {
       
       {/* Notificações de prova social */}
       <SocialProofNotifications />
-      
-      {/* Modal de Lead */}
-      <WhatsAppLeadModal 
-        isOpen={isModalOpen} 
-        onClose={handleCloseModal} 
-      />
     </div>
   );
 };
