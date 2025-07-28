@@ -2,12 +2,16 @@
 <html lang="pt-BR">
   <head>
     <script>
-      window.pixelId = "68677ecab8f5b49fa9008bdb";
-      var a = document.createElement("script");
-      a.setAttribute("async", "");
-      a.setAttribute("defer", "");
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
+      // Previne múltiplos carregamentos do pixel Utmify
+      if (!window.utmifyPixelLoaded) {
+        window.pixelId = "68677ecab8f5b49fa9008bdb";
+        window.utmifyPixelLoaded = true;
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+      }
     </script>
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
