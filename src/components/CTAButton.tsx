@@ -15,7 +15,7 @@ export const CTAButton = ({
 }: CTAButtonProps) => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    window.open('https://bit.ly/idm_atendimento', '_blank');
+    window.open('https://bit.ly/atendimentoidm', '_blank');
   };
 
   const getButtonClasses = () => {
